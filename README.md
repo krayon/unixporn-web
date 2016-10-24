@@ -14,5 +14,9 @@ https://www.nixplorer.org
 
 - Removed lots of spam uploads and crawled images.
 
+# Future plans
+- Clean up the CSS (YES, i really need to get around to do that!)
+- Create a member section, allow comments and votes on uploads.. etc.. But i still want to keep the site as simple as possible.
+
 # License
 GNU General Public License v2.0
