@@ -1,5 +1,9 @@
 <?php include_once('inc/header.php'); ?>
 
+        <div class="page-header">
+        <h1>Terms of Service</h1>
+      </div>
+
       <div class="row">
         <div class="col-md-6">
           <h4 class="tos4">§1. Use of Service</h4>
