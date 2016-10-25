@@ -1,5 +1,5 @@
 # Nixplorer website
-A free GNU/Linux image hosting and screenshot sharing service.
+A free non-profit GNU/Linux/*BSD image hosting and screenshot sharing service.
 
 Feel free to suggest changes, contribute and improve the code.
 
