@@ -11,7 +11,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free GNU/Linux,FreeBSD,OpenBSD and Unix-like image hosting and screenshot sharing">
-    <meta name="author" content="OH">
+    <meta name="author" content="Nixplorer">
     <title>Nixplorer - Free GNU/Linux image hosting and screenshot sharing | www.nixplorer.org</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
