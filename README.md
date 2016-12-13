@@ -19,7 +19,7 @@ https://www.nixplorer.org
 
 # Future plans
 - Clean up the CSS (YES, i really need to get around to do that!)
-- Find a solution to avoid session/cookie for the captcha during upload.
+- Find a solution to avoid using a cookie for the captcha during upload.
 
 # License
 GNU General Public License v2.0
