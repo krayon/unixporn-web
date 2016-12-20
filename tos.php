@@ -43,8 +43,8 @@
           <p>UNIX&reg; is a registered trademark of The Open Group.</p>
           <p>FreeBSD&reg; is a registered trademark of The FreeBSD Foundation.</p>
 
-          <h4 class="tos4">§8. License (GPLv2)</h4>
-          <p>This website is available at <a href="https://github.com/OscarHolst/nixplorer-web/" target="_BLANK">github</a> under the GNU General Public License v2.0</p>
+          <h4 class="tos4">§8. License (MIT)</h4>
+          <p>This website is available at <a href="https://github.com/OscarHolst/nixplorer-web/" target="_BLANK">github</a> under the MIT License.</p>
 
           <h4 class="tos4">§9. Disclaimer</h4>
           <p>Nixplorer is not to be held responsible for the images uploaded thru our service.</p>
