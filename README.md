@@ -22,4 +22,4 @@ https://www.nixplorer.org
 - Find a solution to avoid using a cookie for the captcha during upload.
 
 # License
-GNU General Public License v2.0
+MIT
