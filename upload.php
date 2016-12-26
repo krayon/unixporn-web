@@ -35,9 +35,14 @@ if (isset($_POST['submit']) && (is_uploaded_file($_FILES['files']['tmp_name'][0]
     $ext = strtolower($splitter[count($splitter)-1]);
     $newname = randString();
     $file_name = $newname.'.'.$ext;
+    $allowedExt =  array('jpg','jpeg','png');
         if($file_size > 4097152){
       $errors[]='File size must be less than 4 MB';
         }   
+        if(!in_array($ext,$allowedExt) ) {
+            echo '<div class="alert alert-danger" role="alert">Sorry, something went wrong! [3000]</div>';
+            exit();
+        }
         if(empty($errors)==true){
             if(is_dir($path)==false){
                 echo '<div class="alert alert-danger" role="alert">Sorry, something went wrong! [3001]</div>';
