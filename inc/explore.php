@@ -28,9 +28,9 @@ $stmt = $conn->query("SELECT * FROM uploads ORDER BY imgDate DESC LIMIT $offset,
 {
         $id = $row['id'];
         $imgName = $row['imgName'];
-        $imgText = $row{'imgText'}; 
-        $imgDate = $row{'imgDate'};
-        $imgThumb = $row{'imgThumb'};
+        $imgText = $row['imgText']; 
+        $imgDate = $row['imgDate'];
+        $imgThumb = $row['imgThumb'];
 
         echo '<a href="https://nixplorer.org/i/'.$imgName.'" data-title="'.$imgText.' | https://nixplorer.org/i/'.$imgName.'" data-lightbox="latest"><img src="https://nixplorer.org/i/'.$imgThumb.'" class="img-thumbnail" title="'.$imgText.'" alt="image"/></a>';       
 }
@@ -101,9 +101,9 @@ else
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
          $id = $row['id'];
          $imgName = $row['imgName'];
-         $imgText = $row{'imgText'}; 
-         $imgDate = $row{'imgDate'};
-         $imgThumb = $row{'imgThumb'};
+         $imgText = $row['imgText']; 
+         $imgDate = $row['imgDate'];
+         $imgThumb = $row['imgThumb'];
 
          echo '<a href="https://nixplorer.org/i/'.$imgName.'" data-title="'.$imgText.' | https://nixplorer.org/i/'.$imgName.'" data-lightbox="latest"><img src="https://nixplorer.org/i/'.$imgThumb.'" class="img-thumbnail" title="'.$imgText.'" alt="image"/></a>';
 }
