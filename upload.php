@@ -30,7 +30,6 @@ if (isset($_POST['submit']) && (is_uploaded_file($_FILES['files']['tmp_name'][0]
     $imgText = htmlspecialchars($_POST['imgText']);
     $imgDate = time();
     $path='i/';
-    $imgIP = $_SERVER["REMOTE_ADDR"];
     $splitter = explode('.', $file_name);
     $ext = strtolower($splitter[count($splitter)-1]);
     $newname = randString();
@@ -61,7 +60,7 @@ if (isset($_POST['submit']) && (is_uploaded_file($_FILES['files']['tmp_name'][0]
                 // Filename already exist!
                 exit();
             }
-            $stmt = $conn->query("INSERT INTO uploads (imgName, imgSize, imgType, imgText, imgDate, imgThumb, imgIP) VALUES ('$file_name', '$file_size', '$file_type', '$imgText', '$imgDate', '$thumb_name', '$imgIP')");
+            $stmt = $conn->query("INSERT INTO uploads (imgName, imgSize, imgType, imgText, imgDate, imgThumb) VALUES ('$file_name', '$file_size', '$file_type', '$imgText', '$imgDate', '$thumb_name')");
         }else{
                 print_r($errors);
         }
