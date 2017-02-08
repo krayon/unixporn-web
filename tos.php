@@ -12,8 +12,8 @@
           <p>If an image has been falsely uploaded or you want to report abuse of our serivce, please e-mail to <a href="mailto:webmaster@nixplorer.org">webmaster@nixplorer.org</a></p>
 
           <h4 class="tos4">§2. Privacy</h4>
-          <p>Nixplorer collects IP address and browser type. This data is used to manage and improve the Nixplorer services and for geographical statistics.</p>
-          <p>We do not share any collected information with third parties.</p>
+          <p>Nixplorer does no longer collect your IP and browser type. This data was supposed to be used to manage and improve the Nixplorer services and for geographical statistics. But no such thing is no longer relevant nor neccessary. No information from the visitor is stored anywhere in our database.</p>
+          <p>However, we do keep server logs. But if you are so concerned about your integrity and privacy, this webservice is the least of your problems. We highly suggest you use a VPN while browsing the internet.</p>
 
           <h4 class="tos4">§3. Cookies</h4>
           <p>Nixplorer uses cookies. A cookie is a small piece of data sent from a website and stored in the user's web browser while the user is browsing.</p>
