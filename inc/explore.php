@@ -95,7 +95,7 @@ else
     if (isset($_POST['query'])) {
         // Clean query string for HTML (hquery) and SQL (squery)
         $hquery = htmlspecialchars($_POST['query']);
-        $squery = mysql_like_escape($_POST['query']);
+        $squery = mysql_like_wildcard_escape($_POST['query']);
 
         // Prepare and execute query
         $stmt = $conn->prepare("SELECT * FROM uploads WHERE imgText LIKE ? ORDER BY imgDate DESC LIMIT 24");
