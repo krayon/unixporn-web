@@ -360,7 +360,7 @@
     if (typeof this.album[this.currentImageIndex].title !== 'undefined' &&
       this.album[this.currentImageIndex].title !== '') {
       this.$lightbox.find('.lb-caption')
-        .html(this.album[this.currentImageIndex].title)
+        .text(this.album[this.currentImageIndex].title)
         .fadeIn('fast')
         .find('a').on('click', function(event) {
           if ($(this).attr('target') !== undefined) {
