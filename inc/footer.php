@@ -9,5 +9,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/lightbox.js"></script>
+<script>
+  // Override default LightBox options
+  lightbox.option({
+    // Image title should NOT be output as HTML
+    'sanitizeTitle': true
+  })
+</script>
 </body>
 </html>
