@@ -1,0 +1,8 @@
+# IMAGE UPLOAD DIRECTORY
+#
+# Uploaded images will arrive here. No other files should be present.
+#
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
