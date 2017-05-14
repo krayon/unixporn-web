@@ -93,11 +93,16 @@ else
         
   }
     if (isset($_POST['query'])) {
-    $query = htmlspecialchars($_POST['query']);
-    $stmt = $conn->query("SELECT * FROM uploads WHERE imgText LIKE '$query%' ORDER BY imgDate DESC LIMIT 24");
+        // Clean query string for HTML (hquery) and SQL (squery)
+        $hquery = htmlspecialchars($_POST['query']);
+        $squery = mysql_like_wildcard_escape($_POST['query']);
+
+        // Prepare and execute query
+        $stmt = $conn->prepare("SELECT * FROM uploads WHERE imgText LIKE ? ORDER BY imgDate DESC LIMIT 24");
+        $stmt->execute(array($squery . '%'));
 
     if ($stmt->rowCount() > 0) {
-        echo "<h4>Results for: $query</h4>";
+        echo '<h4>Results for: ' . $hquery . '</h4>';
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
          $id = $row['id'];
          $imgName = $row['imgName'];
@@ -109,7 +114,7 @@ else
 }
   } 
     else {
-       echo '<p>No results for '.$query.'...</p>';
+       echo '<p>No results for ' . $hquery . '...</p>';
     }
   }
 ?>
