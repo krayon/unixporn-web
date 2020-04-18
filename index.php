@@ -1,3 +1,4 @@
+<?php include_once('inc/common.php'); ?>
 <?php include_once('inc/header.php'); ?>
 
 <div class="page-header">

@@ -9,13 +9,13 @@ $posts = $query->fetchAll();
 $data = '<?xml version="1.0" encoding="UTF-8"?>';
 $data .= '<rss version="2.0">';
 $data .= '<channel>';
-$data .= '<title>Nixplorer</title>';
-$data .= '<link>https://www.nixplorer.org</link>';
+$data .= '<title>' . $site_name . '</title>';
+$data .= '<link>//' . $site_url . '</link>';
 $data .= '<description>Free GNU/Linux image hosting and screenshot sharing</description>';
     foreach ($posts as $row) {
     $data .= '<item>';
     $data .= '<title>'.$row['imgText'].'</title>';
-    $data .= '<link>https://nixplorer.org/i/'.$row['imgName'].'</link>';
+    $data .= '<link>//' . $site_url . '/i/'.$row['imgName'].'</link>';
     $data .= '<description>'.date("Y-m-d",$row['imgDate']).'</description>';
     $data .= '</item>';
     }

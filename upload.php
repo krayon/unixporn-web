@@ -1,3 +1,4 @@
+<?php include_once('inc/common.php'); ?>
 <?php include_once('inc/header.php'); ?>
 
         <div class="page-header">
@@ -71,7 +72,7 @@ if (isset($_POST['submit']) && (is_uploaded_file($_FILES['files']['tmp_name'][0]
   if(empty($error)){
     $stmt = $conn->query("SELECT * FROM uploads ORDER BY id DESC LIMIT 1");
       while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-      echo '<div> <h4>Image uploaded!</h4> <a href="https://nixplorer.org/i/'.$row['imgName'].'" target="_blank"><img src="https://nixplorer.org/i/'.$row['imgThumb'].'"><br /> https://nixplorer.org/i/'.$row['imgName'].'</a> </div>';
+      echo '<div> <h4>Image uploaded!</h4> <a href="//' . $site_url . '/i/'.$row['imgName'].'" target="_blank"><img src="//' . $site_url . '/i/'.$row['imgThumb'].'"><br /> ' . $site_url . '/i/'.$row['imgName'].'</a> </div>';
       }    
     }
   }

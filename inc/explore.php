@@ -1,3 +1,4 @@
+<?php include_once('inc/common.php'); ?>
 <?php
 // Find total number of rows in table
 $rowCnt = $conn->query("SELECT COUNT(*) FROM uploads")->fetchColumn();
@@ -32,7 +33,7 @@ $stmt = $conn->query("SELECT * FROM uploads ORDER BY imgDate DESC LIMIT $offset,
         $imgDate = $row['imgDate'];
         $imgThumb = $row['imgThumb'];
 
-        echo '<a href="https://nixplorer.org/i/'.$imgName.'" data-title="'.$imgText.' | https://nixplorer.org/i/'.$imgName.'" data-lightbox="latest"><img src="https://nixplorer.org/i/'.$imgThumb.'" class="img-thumbnail" title="'.$imgText.'" alt="image"/></a>';       
+        echo '<a href="//' . $site_url . '/i/'.$imgName.'" data-title="'.$imgText.' | ' . $site_url . '/i/'.$imgName.'" data-lightbox="latest"><img src="//' . $site_url . '/i/'.$imgThumb.'" class="img-thumbnail" title="'.$imgText.'" alt="image"/></a>';
 }
 // Uploads counter
 echo '<p class="upcount">' .$total_rows. ' uploads and counting...</p>';
@@ -110,7 +111,7 @@ else
          $imgDate = $row['imgDate'];
          $imgThumb = $row['imgThumb'];
 
-         echo '<a href="https://nixplorer.org/i/'.$imgName.'" data-title="'.$imgText.' | https://nixplorer.org/i/'.$imgName.'" data-lightbox="latest"><img src="https://nixplorer.org/i/'.$imgThumb.'" class="img-thumbnail" title="'.$imgText.'" alt="image"/></a>';
+         echo '<a href="//' . $site_url . '/i/'.$imgName.'" data-title="'.$imgText.' | ' . $site_url . '/i/'.$imgName.'" data-lightbox="latest"><img src="//' . $site_url . '/i/'.$imgThumb.'" class="img-thumbnail" title="'.$imgText.'" alt="image"/></a>';
 }
   } 
     else {

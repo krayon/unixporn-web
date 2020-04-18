@@ -1,8 +1,9 @@
+<?php include_once('inc/common.php'); ?>
 </div>
 
 <footer class="footer">
 <div class="container">
-<p class="footerish">&copy; 2014-<?php echo date("Y") ?> nixplorer.org | <a title="Github" href="https://github.com/OscarHolst/nixplorer-web/" target="_BLANK"><img alt="github" src="img/github.png"></a> | <a title="Terms of Service" href="tos.php">ToS</a> | <a title="Contact" href="mailto:webmaster@nixplorer.org">Contact</a> | <a title="RSS" href="rss.php"><img alt="rss" src="img/rss.png"></a></p>
+<p class="footerish">&copy; 2014-<?php echo date("Y") ?> <?php echo $site_url; ?> | <a title="GitHub" href="<?php echo $src_url; ?>" target="_BLANK"><img alt="github" src="img/github.png"></a> | <a title="Terms of Service" href="tos.php">ToS</a> | <a title="Contact" href="mailto:<?php echo $site_email; ?>">Contact</a> | <a title="RSS" href="rss.php"><img alt="rss" src="img/rss.png"></a></p>
 </div>
 </footer>
 

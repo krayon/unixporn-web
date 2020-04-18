@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free GNU/Linux,FreeBSD,OpenBSD and Unix-like image hosting and screenshot sharing. Previously named www.unixporn.org">
-    <meta name="author" content="Nixplorer">
-    <title>Nixplorer | Unixporn | - Free GNU/Linux image hosting and screenshot sharing | Unix Porn | www.nixplorer.org</title>
+    <meta name="author" content="<?php echo $site_name; ?>">
+    <title><?php echo $site_name; ?> | Unixporn | - Free GNU/Linux image hosting and screenshot sharing | Unix Porn | <?php echo $site_url; ?></title>
 <style type="text/css">
   body {
     text-align:center;
@@ -29,7 +29,7 @@ h1 {
   <h3>Congratulations!</h3>
 
   <h5>There are over 4.62 billion pages on the internet, and you managed to find one that does not exist.</h5>
-  <p><a href="https://nixplorer.org">[Go to Nixplorer]</a></p>
+  <p><a href="//<?php echo $site_url; ?>">[Go to <?php echo $site_name; ?>]</a></p>
 
   </body>
 </html>

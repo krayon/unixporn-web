@@ -1,4 +1,5 @@
 <?php 
+include_once('inc/common.php');
 include_once('inc/db.php');
 include_once('inc/functions.php');
 session_start(); 
@@ -11,8 +12,8 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free GNU/Linux,FreeBSD,OpenBSD and Unix-like image hosting and screenshot sharing">
-    <meta name="author" content="Nixplorer">
-    <title>Nixplorer - Free GNU/Linux image hosting and screenshot sharing | www.nixplorer.org</title>
+    <meta name="author" content="<?php echo $site_name; ?>">
+    <title><?php echo $site_name; ?> - Free GNU/Linux image hosting and screenshot sharing | <?php echo $site_url; ?></title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
@@ -35,7 +36,7 @@ session_start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://www.nixplorer.org"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> Nixplorer</a>
+          <a class="navbar-brand" href="//<?php echo $site_url; ?>"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> <?php echo $site_name; ?></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
