@@ -60,7 +60,10 @@ if (isset($_POST['submit']) && (is_uploaded_file($_FILES['files']['tmp_name'][0]
                 // Filename already exist!
                 exit();
             }
-            $stmt = $conn->query("INSERT INTO uploads (imgName, imgSize, imgType, imgText, imgDate, imgThumb) VALUES ('$file_name', '$file_size', '$file_type', '$imgText', '$imgDate', '$thumb_name')");
+
+            // Prepare and execute query
+            $stmt = $conn->prepare("INSERT INTO uploads (imgName, imgSize, imgType, imgText, imgDate, imgThumb) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt->execute(array($file_name, $file_size, $file_type, $imgText, $imgDate, $thumb_name));
         }else{
                 print_r($errors);
         }
