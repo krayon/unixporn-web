@@ -7,4 +7,8 @@ $site_email = 'webmaster@nixplorer.org';
 $site_notices = [
     '<strong>Notice!</strong> We have moved from www.unixporn.org to www.nixplorer.org'
 ];
+
+$db_database = 'DB_DATABASE';
+$db_username = 'DB_USERNAME';
+$db_password = 'DB_PASSWORD';
 ?>

@@ -1,4 +1,6 @@
 <?php
+include_once('inc/common.php');
+
 // error_reporting(E_ALL);
 // ini_set('display_errors', 1);
 
@@ -26,7 +28,11 @@ function mysql_like_wildcard_unescape($str) {
 // }
 
 try {
-$conn = new PDO('mysql:host=localhost;dbname=DBNAME;charset=utf8','USERNAME','PASSWORD');
+$conn = new PDO(
+     'mysql:host=localhost;dbname=' . $db_database . ';charset=utf8'
+    ,$db_username
+    ,$db_password
+);
 $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 }
 
